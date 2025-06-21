@@ -3,54 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinAI Insights - AI-Driven Financial Analysis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Agent-Based Simulation of Herding Effect in Financial Market</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Georgia for a classic, serif look similar to NYT -->
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
     <style>
-        body { background: #f8f9fa; }
-        .feature-img { width: 100%; height: 200px; object-fit: cover; }
-        .footer { font-size: 0.95em; color: #888; }
+        /* Custom CSS for the Georgia font and smooth scrolling */
+        body {
+            font-family: 'Georgia', serif; /* Changed font to Georgia */
+            scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+        }
+        /* Ensures images are responsive within their containers */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem; /* Rounded corners for images */
+        }
+        /* Custom background gradient for the hero section, now olive-themed */
+        .hero-gradient {
+            background: linear-gradient(to right, #36454F, #5F6B4C); /* Darker green/charcoal to medium olive green */
+        }
     </style>
 </head>
-<body>
-    <div class="container-fluid p-0">
-        <img src="https://placehold.co/1200x250/336699/FFFFFF?text=FinAI+Insights+-+AI+Driven+Financial+Analysis" class="img-fluid w-100" alt="FinAI Insights Banner">
-        <div class="container py-4">
-            <h1 class="display-5">Welcome to FinAI Insights</h1>
-            <h2 class="h4 mb-4">Leveraging AI for Smarter Financial Decisions</h2>
-            <p>Welcome to <strong>FinAI Insights</strong>, your partner in navigating the complex world of financial markets with cutting-edge Artificial Intelligence.<br>
-            We transform raw financial data into actionable insights, helping investors, businesses, and individuals make informed decisions and optimize their strategies.</p>
-            <p>Our proprietary AI models analyze vast datasets, identify hidden patterns, and forecast market trends with a level of precision that traditional methods simply cannot match. Whether you're looking to enhance your portfolio performance, mitigate risks, or understand market dynamics, FinAI Insights provides the clarity you need.</p>
-            <hr>
-            <h2 class="mb-4">Why Choose FinAI Insights?</h2>
-            <div class="row text-center mb-5">
-                <div class="col-md-4 mb-4">
-                    <h3 class="h5">🧠 AI-Powered Accuracy</h3>
-                    <p>Our advanced machine learning algorithms continuously learn and adapt to market shifts, providing highly accurate predictions and deep analytical insights.</p>
-                    <img src="https://placehold.co/300x200/4CAF50/FFFFFF?text=AI+Accuracy" class="feature-img rounded" alt="AI-Powered Insights">
-                    <div class="text-muted">AI-Powered Insights</div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h3 class="h5">💡 Actionable Intelligence</h3>
-                    <p>We don't just provide data; we provide clear, actionable recommendations tailored to your specific financial goals and risk tolerance.</p>
-                    <img src="https://placehold.co/300x200/FFC107/FFFFFF?text=Actionable+Insights" class="feature-img rounded" alt="Actionable Intelligence">
-                    <div class="text-muted">Actionable Intelligence</div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h3 class="h5">🔒 Secure & Confidential</h3>
-                    <p>Your financial data and investment strategies are handled with the utmost confidentiality and secured using industry-leading protocols.</p>
-                    <img src="https://placehold.co/300x200/2196F3/FFFFFF?text=Secure+Data" class="feature-img rounded" alt="Secure & Confidential">
-                    <div class="text-muted">Secure & Confidential</div>
-                </div>
+<body class="bg-amber-50 text-stone-800 antialiased">
+    <!-- The body background is now a soft cream/beige -->
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-900">Olive Farm Investment in JeJu</h1>
+            <nav>
+                <!-- Navigation links with olive-themed colors -->
+                <a href="#home" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Home</a>
+                <a href="#about" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">About</a>
+                <a href="#approach" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Approach</a>
+                <a href="#contact" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32 flex items-center justify-center min-h-screen">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Investigating Herding Effect with <br><span class="text-amber-100">Agent-Based Financial Market Simulation</span>
+            </h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                Uncover and understand the dynamics of herding behavior in financial markets through advanced, customizable agent-based simulations.
+            </p>
+            <a href="#contact" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Explore Simulations
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section: What is the Herding Effect? -->
+    <section id="about" class="py-16 md:py-24 bg-amber-50">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-3xl md:text-4xl font-bold text-green-900 mb-6">
+                    Understanding the Herding Effect
+                </h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    The Herding Effect in financial markets refers to the phenomenon where individuals tend to follow the actions of a larger group, even if their private information suggests a different course of action. This can lead to market inefficiencies, increased volatility, and even bubbles or crashes.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Our agent-based simulator provides a powerful tool to investigate the mechanisms behind herding behavior. By modeling individual agents with varying degrees of rationality, information access, and social influence, we can observe how collective behaviors emerge and impact market prices.
+                </p>
             </div>
-            <hr>
-            <h2 class="mb-3">Ready to Transform Your Financial Strategy?</h2>
-            <p>Explore our services to see how we can help you achieve your financial objectives.</p>
-            <hr>
-            <div class="footer text-center mt-4">
-                <div>© 2025 FinAI Insights. All rights reserved.</div>
-                <div>Disclaimer: Financial investment involves risk. Our analysis provides insights and should not be considered financial advice.</div>
+            <div>
+                <!-- Placeholder image with JeJu Olive Farm text -->
+                <img src="https://placehold.co/600x400/5F6B4C/F5F5DC?text=JeJu+Olive+Farm" alt="JeJu Olive Farm Illustration" class="w-full h-auto object-cover rounded-lg shadow-lg">
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Our Approach Section: Simulation Methodology for Herding -->
+    <section id="approach" class="py-16 md:py-24 bg-amber-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-green-900 text-center mb-12">
+                Our Agent-Based Approach
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1: Agent-Based Modeling (updated for herding) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h4l-1-1v-3.25m3.75 0V9h-3.75m3.75 0h3.75M12 21.75V12M8.25 10.5h7.5m-7.5 3.75h7.5m-3.75 3.75v3.75"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-stone-900 mb-3 text-center">Agent-Based Herding</h4>
+                    <p class="text-stone-700 text-center">
+                        We simulate diverse market agents whose decision-making is influenced by their own analysis, market trends, and the observed actions of others, directly enabling the study of herding.
+                    </p>
+                </div>
+                <!-- Feature 2: Information Cascades & Social Networks -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-stone-900 mb-3 text-center">Information Flow & Networks</h4>
+                    <p class="text-stone-700 text-center">
+                        Our models incorporate complex social and information networks, crucial for understanding how information cascades and imitation behaviors lead to herding.
+                    </p>
+                </div>
+                <!-- Feature 3: Impact Analysis & Scenario Testing -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10a2 2 0 002 2h12a2 2 0 002-2V7m-4 3h4m-4 7h4m-4-7v4m0 0H9m5 0v-4m0 0H9m5 0v-4"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-stone-900 mb-3 text-center">Scenario Analysis</h4>
+                    <p class="text-stone-700 text-center">
+                        Run various "what-if" scenarios to analyze the conditions under which herding intensifies or dissipates, and its impact on market stability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-green-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Model Herding Behavior?
+            </h3>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                Contact us today to learn more about how our agent-based simulations can help your business understand and mitigate the risks associated with financial market herding.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="mailto:info@finsimsolutions.com" class="bg-white text-green-900 hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Email Us
+                </a>
+                <a href="tel:+1234567890" class="border-2 border-white text-white hover:bg-white hover:text-green-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Call Us
+                </a>
+            </div>
+            <p class="mt-8 text-sm opacity-80">
+                &copy; 2025 Olive Farm Investment in JeJu. All rights reserved.
+            </p>
+        </div>
+    </section>
+
 </body>
 </html>
