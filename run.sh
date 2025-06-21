@@ -4,9 +4,9 @@
 # IMPORTANT: The path is updated to /web/ofij-web/web as requested.
 cd /web/ofij-web/web
 
-# Activate your virtual environment if you are using one
-# If you don't use a virtual environment, you can comment out or remove these lines
-# source venv/bin/activate
+# Activate your virtual environment
+# The Python environment is located at /web/Env/website.
+source /web/Env/website/bin/activate
 
 # Define log file paths
 # Ensure these directories exist and are writable by the Gunicorn user
