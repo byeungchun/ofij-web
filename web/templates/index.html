@@ -30,15 +30,14 @@
     <!-- The body background is now a soft cream/beige -->
 
     <!-- Header Section -->
-    <header class="bg-white shadow-sm py-4">
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <img src="{{ url_for('static', filename='img/logo_letter.png') }}" alt="Olive Farm Investment in JeJu Logo" class="h-10">
+            <a href="index.html"><img src="{{ url_for('static', filename='img/logo_letter.png') }}" alt="Olive Farm Investment in JeJu Logo" class="h-10"></a>
             <nav>
                 <!-- Navigation links with olive-themed colors -->
-                <a href="#home" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Home</a>
-                <a href="#about" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">About</a>
-                <a href="#approach" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Approach</a>
-                <a href="#contact" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Contact</a>
+                <a href="index.html#home" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Home</a>
+                <a href="index.html#approach" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Approach</a>
+                <a href="data.html" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Data</a>
             </nav>
         </div>
     </header>
@@ -52,7 +51,7 @@
             <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
                 Uncover and understand the dynamics of herding behavior in financial markets through advanced, customizable agent-based simulations.
             </p>
-            <a href="#contact" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+            <a href="#approach" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                 Explore Simulations
             </a>
         </div>
@@ -120,28 +119,14 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-green-900 text-white">
+    <footer class="bg-green-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Model Herding Behavior?
-            </h3>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-                Contact us today to learn more about how our agent-based simulations can help your business understand and mitigate the risks associated with financial market herding.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-                <a href="mailto:info@finsimsolutions.com" class="bg-white text-green-900 hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    Email Us
-                </a>
-                <a href="tel:+1234567890" class="border-2 border-white text-white hover:bg-white hover:text-green-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    Call Us
-                </a>
-            </div>
-            <p class="mt-8 text-sm opacity-80">
+             <p class="text-sm opacity-80">
                 &copy; 2025 Olive Farm Investment in JeJu. All rights reserved.
             </p>
         </div>
-    </section>
+    </footer>
+
 
 </body>
 </html>
