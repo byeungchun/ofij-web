@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Data Indicators</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Georgia -->
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS to match the main page's style */
+        body {
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-stone-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+             <!-- Link the logo back to the main page -->
+            <a href="index.html"><img src="{{ url_for('static', filename='img/logo_letter.png') }}" alt="Olive Farm Investment in JeJu Logo" class="h-10" onerror="this.onerror=null;this.src='https://placehold.co/200x40/5F6B4C/FFFFFF?text=Logo';"></a>
+            <nav>
+                <!-- Navigation links -->
+                <a href="index.html#home" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Home</a>
+                <a href="index.html#approach" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Approach</a>
+                <a href="data.html" class="text-green-800 hover:text-green-600 px-3 py-2 rounded-md font-medium">Data</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content: Financial Data Table -->
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-green-900 text-center mb-12">
+                Financial Indicators
+            </h1>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-12">
+                This table provides a set of key financial indicators used in market analysis. The data presented here is for illustrative purposes and is used as input for our agent-based simulations.
+            </p>
+
+            <!-- Data Table -->
+            <div class="overflow-x-auto bg-white rounded-lg shadow">
+                <table class="min-w-full text-left text-lg">
+                    <thead class="bg-green-800 text-white">
+                        <tr>
+                            <th class="p-4">Indicator</th>
+                            <th class="p-4">Value</th>
+                            <th class="p-4">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-stone-200">
+                        <tr class="hover:bg-amber-100">
+                            <td class="p-4 font-semibold">P/E Ratio (Price-to-Earnings)</td>
+                            <td class="p-4">15.4</td>
+                            <td class="p-4">Measures the company's current share price relative to its per-share earnings.</td>
+                        </tr>
+                        <tr class="hover:bg-amber-100">
+                            <td class="p-4 font-semibold">EPS (Earnings Per Share)</td>
+                            <td class="p-4">$5.25</td>
+                            <td class="p-4">The portion of a company's profit allocated to each outstanding share of common stock.</td>
+                        </tr>
+                        <tr class="hover:bg-amber-100">
+                            <td class="p-4 font-semibold">Market Cap</td>
+                            <td class="p-4">$1.2T</td>
+                            <td class="p-4">The total market value of a company's outstanding shares of stock.</td>
+                        </tr>
+                         <tr class="hover:bg-amber-100">
+                            <td class="p-4 font-semibold">Dividend Yield</td>
+                            <td class="p-4">2.1%</td>
+                            <td class="p-4">A financial ratio that shows how much a company pays out in dividends each year relative to its stock price.</td>
+                        </tr>
+                        <tr class="hover:bg-amber-100">
+                            <td class="p-4 font-semibold">RSI (Relative Strength Index)</td>
+                            <td class="p-4">65</td>
+                            <td class="p-4">A momentum indicator that measures the speed and change of price movements.</td>
+                        </tr>
+                        <tr class="hover:bg-amber-100">
+                            <td class="p-4 font-semibold">MACD (Moving Average Convergence Divergence)</td>
+                            <td class="p-4">0.75</td>
+                            <td class="p-4">A trend-following momentum indicator that shows the relationship between two moving averages of a security’s price.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+             <p class="text-sm opacity-80">
+                &copy; 2025 Olive Farm Investment in JeJu. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
